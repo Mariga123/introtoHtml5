@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accessible and SEO-Friendly Basic Web Page</title>
+    <meta name="description" content="A basic web page demonstrating HTML5 semantic tags, accessibility best practices, and beginner-friendly SEO principles." />
+</head>
+<body>
+    <a href="#maincontent" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+
+    <header role="banner">
+        <h1>My Website</h1>
+        <nav role="navigation" aria-label="Primary navigation">
+            <ul>
+                <li><a href="#home" accesskey="h">Home</a></li>
+                <li><a href="#about" accesskey="a">About</a></li>
+                <li><a href="#services" accesskey="s">Services</a></li>
+                <li><a href="#contact" accesskey="c">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="maincontent" role="main">
+        <article>
+            <header>
+                <h2>Welcome to My Website</h2>
+                <p>This page demonstrates the use of HTML5 semantic tags, accessibility best practices, and beginner-friendly SEO principles.</p>
+            </header>
+            <section id="home">
+                <h3>Home</h3>
+                <p>This is the home section of the website. It provides an overview of the content and purpose of the site.</p>
+            </section>
+            <section id="about">
+                <h3>About</h3>
+                <p>Learn more about the website and its goals here.</p>
+            </section>
+            <section id="services">
+                <h3>Services</h3>
+                <p>Details about the services offered can be found in this section.</p>
+            </section>
+            <section id="contact">
+                <h3>Contact</h3>
+                <p>Contact information and forms would be placed here.</p>
+            </section>
+        </article>
+
+        <aside role="complementary" aria-label="Related information">
+            <h2>Related Links</h2>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer">WCAG Guidelines</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" target="_blank" rel="noopener noreferrer">MDN Accessibility</a></li>
+                <li><a href="https://developers.google.com/search/docs/beginner/seo-starter-guide" target="_blank" rel="noopener noreferrer">Google SEO Starter Guide</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 mariga. All rights reserved.</p>
+    </footer>
+</body>
+</html>
